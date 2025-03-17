@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 10;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+/* Hide the scrollbar for all browsers */
+html,
+body {
+    overflow-x: hidden;
+    scrollbar-width: none;
+    /* For Firefox */
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Prevent extra spacing or scrolling issues */
+.hello {
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+
+.foot-cont {
+    @apply list-none text-sm text-gray-500
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* dealership*/
+
+.container {
+    @apply mx-auto px-8 md:px-16 lg:px-24
+}
+
+.slick-slider {
+    margin: 0 -15px;
+}
+
+.slick-slide {
+    padding: 10px;
+   
+    text-align: center;
+    
+}
+
+
+
