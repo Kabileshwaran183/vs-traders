@@ -7,34 +7,31 @@ const About = () => {
             
                 <div className="text-center mb-6">
                     <h1 className="text-3xl font-bold text-gray-800">About Us</h1>
-                    <h3 className="text-2xl text-gray-600 mt-2">“📸 FREEZE YOUR MEMORABLE MOMENTS 🎥”</h3>
-                    <h3 className="text-2xl text-gray-600 mt-1">Our goal is to make your lifetime events unforgettable.</h3>
+                    <h3 className="text-2xl text-gray-600 mt-2">🎨 "Color Your World with Quality!"</h3>
+                    <h3 className="text-2xl text-gray-600 mt-1">🔨 "Build Better, Paint Brighter!"</h3>
                 </div>
 
               
                 <div className="text-gray-400 leading-relaxed text-[14px] space-y-5">
                     <p>
-                        <strong className="text-gray-500">Melody Photography</strong> is one of the best wedding photography services in Karaikudi.
-                        We are a team of passionate and expert wedding photographers & cinematographers dedicated to capturing and preserving the
-                        most precious moments of your life. With over twenty years of experience and cutting-edge technology, we bring your wedding
-                        and special occasions to life in the most creative and enthusiastic way.
+                        <strong className="text-gray-500">VS Traders & Paints </strong> is a well-known hardware and paint supply store located in Burma Colony, Karaikudi, Tamil Nadu. The store specializes in providing
+                         high-quality building materials, paints, and related products to cater to the needs of homeowners, contractors, and businesses. T
+                         hey offer a wide range of paint brands, painting accessories, and construction materials, ensuring that customers find everything they need for their renovation or construction projects in one place.
                     </p>
 
                     <p>
-                        At <strong className="text-gray-500">Melody Photography</strong>, we combine technology and artistic creativity to provide
-                        industry-leading photography services. Our commitment to excellence ensures that every cherished moment is perfectly preserved,
-                        earning us the trust and satisfaction of our valued clients.
+                        <strong className="text-gray-500">VS Traders & Paints </strong> Our commitment to quality and affordability makes us a preferred choice in the region. 
+                        We stock premium brands that ensure long-lasting finishes and strong building solutions. Our knowledgeable team is always ready 
+                        to assist customers in selecting the right products based on their specific requirements. With competitive pricing and reliable service, we make it easy for customers to find the best solutions for their homes and businesses.
                     </p>
-                    <p className='text-gray-500'>
-                        With over 5 years of experience, our skilled photographers and cinematographers use cutting-edge technology to bring your
-                         wedding and special events to life. We seamlessly blend artistic creativity and professionalism to craft stunning visuals that you ll
-                          cherish forever.
+                    <p>
+                        <strong className="text-gray-500">At VS Traders & Paints, </strong>  customer satisfaction is our top priority. 
+                        We maintain a well-stocked inventory and operate with flexible hours to ensure convenience. 
+                        Whether you're a professional builder or a homeowner working on a DIY project, we are here to provide expert guidance and top-notch materials. 
+                        Visit us today and experience the perfect blend of quality, service, and affordability!
                     </p>
 
-                    <p>
-                        We take pride in our <strong className="text-gray-500">professionalism, high-standard service, aesthetic sense,
-                            and flexibility</strong>. Our ultimate goal is to deliver compelling, honest, and timeless coverage of your wedding day.
-                    </p>
+              
                 </div>
             </div>
         </section>

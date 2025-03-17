@@ -1,18 +1,19 @@
 import { FaUserTie, FaCamera, FaPhotoVideo, FaLightbulb, FaHandshake, FaPaintBrush } from "react-icons/fa";
+import { FaSitemap } from "react-icons/fa6";
 
 const WhyChooseUs = () => {
     const features = [
         {
             icon: <FaUserTie size={50} className="text-white" />,
-            title: "EXPERIENCED PHOTOGRAPHERS",
+            title: "Trained Professional    ",
         },
         {
-            icon: <FaCamera size={50} className="text-white" />,
-            title: "LATEST EQUIPMENT",
+            icon: <FaPaintBrush size={50} className="text-white" />,
+            title: "Expert Guidance",
         },
         {
-            icon: <FaPhotoVideo size={50} className="text-white" />,
-            title: "VARIETY OF PACKAGES",
+            icon: <FaSitemap size={50} className="text-white" />,
+            title: "Technical site evaluation",
         },
         {
             icon: <FaLightbulb size={40} className="text-white" />,
@@ -23,8 +24,8 @@ const WhyChooseUs = () => {
             title: "CUSTOMER SATISFACTION",
         },
         {
-            icon: <FaPaintBrush size={50} className="text-white" />,
-            title: "EDITING & RETOUCHING",
+            icon: <FaHandshake size={50} className="text-white" />,
+            title: "Trusted Reputation –",
         },
     ];
 
