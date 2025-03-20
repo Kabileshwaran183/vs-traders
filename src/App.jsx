@@ -14,6 +14,8 @@ import Numbercount from "./components/Numbercount"
 
 
 import ScrollToTop from "./components/ScroltoTop"
+import Section1 from "./components/Section1"
+import Section2 from "./components/Section2"
 import Testimonials from "./components/Testimonals"
 import WhatsAppButton from "./components/Whatappbtn"
 import WhyChooseUs from "./components/WhyChooseus"
@@ -29,6 +31,8 @@ function App() {
       <Content/>
       <Events/>
       <About/>
+      <Section1/>
+      <Section2/>
       <WhyChooseUs/>
       <Numbercount/>
       <Testimonials/>
