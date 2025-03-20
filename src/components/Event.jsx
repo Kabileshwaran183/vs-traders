@@ -19,12 +19,6 @@ function Events() {
     return (
         <section className='bg-white'>
             <div className="container bg-white ">
-                <h1 className="text-left font-semi-bold  text-xl md:text-3xl mb-4 px-8">📸 Capturing Timeless Moments</h1>
-                <p className="text-left font-semi-bold text-base md:text-xl mb-4 px-8 text-gray-500">"Photography is more than just capturing images; its about preserving emotions,
-                    love, and memories that last a lifetime. Every smile, every glance, and every heartfelt moment tells a unique story,
-                    and we ensure that no detail is missed. Whether its the warmth of a wedding, the joy of a celebration, or the intimacy of a candid moment,
-                    we bring creativity and precision to every shot. Our expertise in lighting, composition, and storytelling allows us to frame your most precious memories in a way that feels natural,
-                    beautiful, and timeless. Let us turn your special moments into stunning visual treasures."</p>
 
                 <div className='flex gap-5 items-center justify-start px-8 py-16'>
                     <button onClick={() => setPh(true)} className='bg-teal-500 p-3 rounded-lg text-white hover:scale-110 duration-300 delay-100  text-xl md:text-3xl '>Photography</button>

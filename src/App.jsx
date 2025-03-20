@@ -3,6 +3,7 @@
 
 
 import About from "./components/About"
+import Content from "./components/Content"
 import { DropDown } from "./components/DropNav"
 import ContactForm from "./components/Enquriy"
 import Events from "./components/Event"
@@ -17,12 +18,6 @@ import Testimonials from "./components/Testimonals"
 import WhatsAppButton from "./components/Whatappbtn"
 import WhyChooseUs from "./components/WhyChooseus"
 
-
-
-
-
-
-
 function App() {
 
   return (
@@ -31,29 +26,16 @@ function App() {
 
       <DropDown />
       <Hero/>
+      <Content/>
       <Events/>
       <About/>
       <WhyChooseUs/>
       <Numbercount/>
       <Testimonials/>
       <ContactForm/>
-
       <WhatsAppButton/>
-
-
-
-      
       <ScrollToTop />
       <Footer1 />
-
-
-
-
-
-
-
-
-
     </>
   )
 }
