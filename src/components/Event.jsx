@@ -16,8 +16,8 @@ import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 function Events() {
 
     return (
-        <section >
-            <h1>Our Popular Products</h1>
+        <section className='padding-x padding-y '>
+            <h1 className='title'>Our Popular Products</h1>
             <div className="">
                 <Swiper
                     effect={'coverflow'}
@@ -53,7 +53,7 @@ function Events() {
                             </SwiperSlide>
                         ))}
 
-                    <div className="slider-controler">
+                    <div className="slider-controler ">
                         <div className="swiper-button-prev slider-arrow">
                             <FaArrowCircleLeft />
                         </div>

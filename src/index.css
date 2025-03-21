@@ -59,11 +59,14 @@ html {
 }
 
 .title{
-    @apply text-4xl font-bold text-center text-gray-800
+    @apply text-4xl font-bold text-center text-gray-800 mb-10
 }
 .padding-x{
-    @apply px-10 
+    @apply px-10
 }
 .padding-y{
     @apply py-20
+}
+.para-text{
+    @apply text-left text-base md:text-2xl mb-4 px-8 text-gray-500 
 }

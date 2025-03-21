@@ -38,6 +38,8 @@ const HeroSection = () => {
     };
 
     return (
+        <section className="padding-x padding-y ">
+        <h1 className='title'>Send an Inquiry</h1>
         <div
             className="relative flex flex-col md:flex-row items-center  justify-center bg-gray-100 p-4 md:p-6 lg:p-12"
             style={{
@@ -111,6 +113,7 @@ const HeroSection = () => {
                 </form>
             </div>
         </div>
+        </section>
     );
 };
 
