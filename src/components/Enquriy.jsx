@@ -1,125 +1,117 @@
-import { useState } from "react";
-import { FaFacebookF, FaYoutube, FaInstagram, FaPhone, FaEnvelope, FaGlobe, FaWhatsapp } from "react-icons/fa";
+import React, { useState } from "react";
 
-const ContactForm = () => {
+const HeroSection = () => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
-        phone: "",
-        message: "",
+        mobile: "",
+        pincode: "",
+        updates: false,
     });
 
     const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        const { name, value, type, checked } = e.target;
+        setFormData({
+            ...formData,
+            [name]: type === "checkbox" ? checked : value,
+        });
     };
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-    const handleWhatsAppSend = (e) => {
-        e.preventDefault(); // 
+        
+        const whatsappMessage = `Hello, I need assistance with painting services. Here are my details:\n\n
+        🔹 Name: ${formData.name}\n
+        📧 Email: ${formData.email}\n
+        📞 Mobile: ${formData.mobile}\n
+        📍 Pincode: ${formData.pincode}\n
+        ✅ Updates on WhatsApp: ${formData.updates ? "Yes" : "No"}`;
 
-        const { name, email, phone, message } = formData;
-        const phoneNumber = "919600417117"; // 
-        const whatsappMessage = `Hello!%0A%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`;
+        
+        const whatsappNumber = "91600417117"; 
+       
+        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
-        const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
-
+        
         window.open(whatsappURL, "_blank");
     };
 
     return (
-        <section className="bg-white">
-            <div className="container mx-auto p-6 bg-white ">
-                <div className="flex flex-col md:flex-row w-full h-full justify-center">
-
-                    <div className="w-full md:w-1/2 p-4">
-                        <h2 className="text-2xl font-semibold mb-4">Enquiry / Feedback</h2>
-                        <form className="space-y-6" onSubmit={handleWhatsAppSend}>
-                            <input
-                                type="text"
-                                name="name"
-                                required
-                                className="w-full border-b-2 border-gray-300 outline-none focus:border-teal-400 bg-transparent text-lg"
-                                onChange={handleChange}
-                                placeholder="Name *"
-                            />
-                            <input
-                                type="email"
-                                name="email"
-                                required
-                                className="w-full border-b-2 border-gray-300 outline-none  focus:border-teal-400 bg-transparent text-lg"
-                                onChange={handleChange}
-                                placeholder="Email *"
-                            />
-                            <input
-                                type="tel"
-                                name="phone"
-                                required
-                                className="w-full border-b-2 border-gray-300 outline-none  focus:border-teal-400 bg-transparent text-lg"
-                                onChange={handleChange}
-                                placeholder="Phone Number *"
-                            />
-                            <textarea
-                                name="message"
-                                required
-                                rows="3"
-                                className="w-full border-b-2 border-gray-300 outline-none  focus:border-teal-400 bg-transparent text-lg"
-                                onChange={handleChange}
-                                placeholder="Message *"
-                            ></textarea>
-                            <button
-                                type="submit"
-                                className="w-full bg-teal-500 text-white py-2 rounded-md hover:bg-teal-700 transition text-lg font-semibold flex items-center justify-center"
-                            >
-                                <FaWhatsapp className="mr-2" /> Submit
-                            </button>
-                        </form>
+        <div
+            className="relative flex flex-col md:flex-row items-center  justify-center bg-gray-100 p-4 md:p-6 lg:p-12"
+            style={{
+                backgroundImage: "url('/award/hero/hero-2.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "right",
+            
+            }}
+        >
+           
+            <div className="w-full md:w-1/3 bg-white shadow-lg p-6 rounded-lg mt-6 md:mt-0">
+                <h2 className="text-lg md:text-xl font-semibold mb-4">
+                    Get the right assistance for all your painting needs
+                </h2>
+                <form className="space-y-4" onSubmit={handleSubmit}>
+                    <input
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        placeholder="Name*"
+                        className="w-full p-3 border rounded-lg"
+                        required
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        placeholder="Email*"
+                        className="w-full p-3 border rounded-lg"
+                        required
+                    />
+                    <input
+                        type="tel"
+                        name="mobile"
+                        value={formData.mobile}
+                        onChange={handleChange}
+                        placeholder="Mobile*"
+                        className="w-full p-3 border rounded-lg"
+                        required
+                    />
+                    <input
+                        type="text"
+                        name="pincode"
+                        value={formData.pincode}
+                        onChange={handleChange}
+                        placeholder="Pincode*"
+                        className="w-full p-3 border rounded-lg"
+                        required
+                    />
+                    <div className="flex items-center">
+                        <input
+                            type="checkbox"
+                            id="updates"
+                            name="updates"
+                            checked={formData.updates}
+                            onChange={handleChange}
+                            className="mr-2"
+                        />
+                        <label htmlFor="updates" className="text-sm">
+                            Yes, I would like to receive updates on WhatsApp
+                        </label>
                     </div>
-
-
-                    <div className="w-full md:w-1/2 p-4 flex flex-col">
-
-                        <div className="text-left">
-                            <h2 className="text-2xl font-semibold mb-4">Contact</h2>
-                            <div className="space-y-3">
-                                <p className="flex items-center text-xl text-gray-700 border-b-2 pb-2">
-                                    <FaPhone className="text-teal-500 mr-2" /> +91 41518 451848
-                                </p>
-                                <p className="flex items-center text-xl text-gray-700 border-b-2 pb-2">
-                                    <FaPhone className="text-teal-500 mr-2" /> +91 15478 55565
-                                </p>
-                                <p className="flex items-center text-xl text-gray-700 border-b-2 pb-2">
-                                    <FaEnvelope className="text-teal-500 mr-2" /> info@melodyphotography.in
-                                </p>
-                                <p className="flex items-center text-xl text-gray-700 border-b-2 pb-2">
-                                    <FaGlobe className="text-teal-500 mr-2" /> melodyphotography.in
-                                </p>
-                                <p className="flex items-center text-xl text-gray-700 border-b-2 pb-2">
-                                    📍 #110, Dhanalakshmi School Opp, Munichalai Main Road, Karaikudi, Tamil Nadu 630001
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className="mt-5 text-center">
-                            <h2 className="text-3xl font-semibold mb-4">Get Social</h2>
-                            <div className="flex space-x-4 items-center justify-center">
-                                <a href="#" className="bg-gray-100 hover:bg-blue-600 p-3 rounded-full hover:shadow-lg transition duration-500">
-                                    <FaFacebookF className="text-blue-600 hover:text-white text-2xl transition duration-500" />
-                                </a>
-                                <a href="#" className="bg-gray-100 hover:bg-red-600 p-3 rounded-full hover:shadow-lg transition duration-500">
-                                    <FaYoutube className="text-red-600 hover:text-white text-2xl transition duration-500" />
-                                </a>
-                                <a href="#" className="bg-gray-100 hover:bg-pink-700 p-3 rounded-full hover:shadow-lg transition duration-500">
-                                    <FaInstagram className="text-pink-700 hover:text-white text-2xl transition duration-500" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <button
+                        type="submit"
+                        className="w-full bg-green-600 text-white p-3 rounded-lg hover:bg-green-700"
+                    >
+                        Send on WhatsApp
+                    </button>
+                </form>
             </div>
-        </section>
-
+        </div>
     );
 };
 
-export default ContactForm;
+export default HeroSection;

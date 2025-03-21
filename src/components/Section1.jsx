@@ -1,59 +1,45 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
-const inte = [
-    {
-        Name: "Home interior ",
-        img: "/award/home int.jpeg"
-    },
-    {
-        Name: "Living room interior ",
-        img: "/award/living room.jpg"
-    },
 
-    {
-        Name: "Bedroom interior ",
-        img: "/award/bedroom int.jpg"
-    },
-    {
-        Name: " kitchen interior",
-        img: "/award/kic int.jpeg"
-    }
+const interiors = [
+    { Name: "Home Interior", img: "/award/home int.jpeg" },
+    { Name: "Living Room Interior", img: "/award/living room.jpg" },
+    { Name: "Bedroom Interior", img: "/award/bedroom int.jpg" },
+    { Name: "Kitchen Interior", img: "/award/kic int.jpeg" }
+];
 
-]
 export const Section1 = () => {
     return (
-        <section id="explore" className="top-container-1">
-            <div className="">
-                <div className="">
-                    <h2 className="title-text font-bold mx-auto text-gray-700  text-center mb-4 mt-10">Explore our room makeover services</h2>
-                    <p className="mx-auto text-gray-400 text-center fontmobile md:text-lg mb-3">Get hassle-free project management and execution when it comes to building your dream home with a tailor-made service.</p>
-                </div>
-                <div className="flex justify-center flex-col  md:justify-between items-center  px-0 lg:px-4  py-10">
-                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-40 px-32 items-center w-full">
-                        {inte.map((inte) => (
-                            <a href="#products">
-                                <div className="flex justify-center relative hover:-translate-y-4 duration-500 delay-200    ">
-                                    <img
-                                        src={inte.img}
-                                        alt="Ahmed paint traders"
-                                        title="Ahmed paint traders"
-                                        className="w-full  max-w-md h-full rounded-lg shadow-lg object-center relative  "
-                                    />
-                                    <div className="absolute top-0 left-0 right-0 bottom-0  rounded-lg  text-white    hover:bg-[#000000a1] opacity-0 hover:opacity-[100%] duration-500 delay-150 ">
-                                        <p className="absolute top-[68%] lg:top-[75%] md:top-[75%]  left-2 right-0 md:text-2xl text-[10px]">{inte.Name}</p>
-                                        <div className="absolute  top-[76%] lg:top-[76%] md:top-[78%] md:left-[85%]  left-[85%] right-0 text-white font-bold md:text-2xl text-[10px]">
-                                            <a href="#products">    <BsArrowRight /> </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        ))}
-                    </div>
+        <section id="explore" className="py-10 bg-gray-50">
+            <div className="text-center px-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-700 mb-4">
+                    Explore Our Room Makeover Services
+                </h2>
+                <p className="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto">
+                    Get hassle-free project management and execution when it comes to building your dream home with a tailor-made service.
+                </p>
+            </div>
 
-                </div>
+          
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6 md:px-12 py-10">
+                {interiors.map((room, index) => (
+                    <a key={index} href="#products" className="group">
+                        <div className="relative hover:-translate-y-2 duration-300 shadow-lg rounded-lg overflow-hidden">
+                            <img
+                                src={room.img}
+                                alt={room.Name}
+                                title={room.Name}
+                                className="w-full h-60 object-cover rounded-lg"
+                            />
+                            <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white">
+                                <p className="text-lg font-semibold">{room.Name}</p>
+                                <BsArrowRight className="text-2xl mt-2" />
+                            </div>
+                        </div>
+                    </a>
+                ))}
             </div>
         </section>
-
     );
 };
 
