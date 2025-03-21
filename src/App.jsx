@@ -12,6 +12,9 @@ import Section2 from "./components/Section2";
 import Testimonials from "./components/Testimonals";
 import WhatsAppButton from "./components/Whatappbtn";
 import WhyChooseUs from "./components/WhyChooseus";
+import Notfoundhome from "./components/Notfound/Notfoundhome";
+import Nipponbanner from "./components/Nippon/Nipponhero";
+import NipponNavbar from "./components/Nippon/Nipponnavbar";
 
 function App() {
   return (
@@ -34,12 +37,19 @@ function App() {
             <Testimonials />
             </>
           } />
-          <Route path="/about" element={<About />} />
+          <Route path="/nippon-paints" element={
+            <>
+              <Nipponbanner/>
+              <NipponNavbar/>
+              <Section1/>
+              <ContactForm/>
+            </>
+           
+            } />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<ContactForm />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/why-choose-us" element={<WhyChooseUs />} />
-          <Route path="*" element={<h1 className="text-center text-3xl text-white">404 - Page Not Found</h1>} />
+          
+          <Route path="*" element={<Notfoundhome/>} />
         </Routes>
       </div>
 

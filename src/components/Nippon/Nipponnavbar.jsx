@@ -1,21 +1,23 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const GalleryNavbar = () => {
-    const [selectedCategory, setSelectedCategory] = useState("all");
+const NipponNavbar = () => {
+    const [selectedCategory, setSelectedCategory] = useState("");
     const navigate = useNavigate();
-
     const categories = [
-        "All", "Wedding", "Portraits", "Events", "Couple Portraits", "Candid Moment"
+        "Interior", "Exterior", "Wood & Metal Paints", "Primers/Undercoats",
     ];
-
-    const formatCategoryForURL = (category) => {
-        return category.toLowerCase().replace(/\s+/g, "-");
-    };
 
     const handleCategoryClick = (category) => {
         setSelectedCategory(category);
-        navigate(`/Gallery/${formatCategoryForURL(category)}`);
+
+        
+        const formattedCategory = category
+            .toLowerCase()
+            .replace(/\s+/g, "-") 
+            .replace(/&/g, "and"); 
+
+        navigate(`/nippon-paints/${formattedCategory}`);
     };
 
     return (
@@ -35,4 +37,4 @@ const GalleryNavbar = () => {
     );
 };
 
-export default GalleryNavbar;
+export default NipponNavbar;
