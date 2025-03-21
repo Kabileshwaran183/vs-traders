@@ -12,7 +12,7 @@ export default function Hero() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <div className="h-[50vh] md:h-screen bg-red-500 w-full overflow-hidden relative">
+    <div className="h-[50vh] lg:h-screen bg-red-500 w-full overflow-hidden relative">
       {/* Main Swiper (Full-Screen Images) */}
         <Swiper
           loop={true}

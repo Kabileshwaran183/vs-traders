@@ -11,7 +11,7 @@ const About = () => {
                 </div>
 
               
-                <div className="text-gray-400 leading-relaxed text-[14px] space-y-5 mb-20">
+                <div className="text-gray-400 leading-relaxed text-[14px] md:text-[20px] space-y-5 mb-20">
                     <p>
                         <strong className="text-gray-500">VS Traders & Paints </strong> is a well-known hardware and paint supply store located in Burma Colony, Karaikudi, Tamil Nadu. The store specializes in providing
                          high-quality building materials, paints, and related products to cater to the needs of homeowners, contractors, and businesses. T
