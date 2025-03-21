@@ -12,16 +12,13 @@ export default function Hero() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <div className="h-[50%] md:h-screen  bg-black overflow-hidden ">
-
+    <div className="h-[50vh] md:h-screen bg-red-500 w-full overflow-hidden relative">
       {/* Main Swiper (Full-Screen Images) */}
-      <div className="h-full w-full flex items-center justify-center">
-      
         <Swiper
           loop={true}
           navigation={{
             nextEl: ".next-btn",
-            prevEl: ".prev-btn",
+            prevEl: ".prev-btn",  
           }}
           autoplay={{
             delay: 2000,
@@ -33,27 +30,18 @@ export default function Hero() {
           style={{height:"100%"}}
         >
           {Data.map((item, index) => (
-            <SwiperSlide key={index} className="h-full w-full flex items-center justify-center">
-              <div className="absolute w-screen h-[50%] md:h-screen -z-10">
-              <div className="bg-black opacity-80 absolute w-screen h-screen z-10"></div>
-              <img
-                src={item}
-                className=" w-screen "
-                alt={`slide-${index}`}
-              />
-              </div>
-              <img
-                src={item}
-                className="h-full w-auto mx-auto"
-                alt={`slide-${index}`}
-              />
-            </SwiperSlide>
+            <SwiperSlide key={index} className="h-full w-full">
+            <img
+              src={item}
+              className="w-full h-full object-cover"
+              alt={`slide-${index}`}
+            />
+          </SwiperSlide>
+          
           ))}
         </Swiper>
-      </div>
-
       {/* Thumbnail Swiper (Right-Side Column) */}
-      <div className="absolute  right-10 md:right-28 top-[40%] md:top-[55%] transform -translate-y-1/2 flex flex-col gap-2 z-40  md:block">
+      <div className="absolute  right-10 md:right-28 top-[40%] md:top-[55%] transform -translate-y-1/2 gap-2 z-40 hidden  lg:block">
         <div className="flex flex-col gap-4 items-center max-sm:hidden">
           {/* Previous Button */}
           <button className="prev-btn bg-teal-300 max-md:h-8 text-black opacity-30 p-2 max-md:text-base rounded-full">
@@ -87,7 +75,7 @@ export default function Hero() {
             ▼
           </button>
         </div>
-      </div>
+      </div>-
     </div>
   );
 }
