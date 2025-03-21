@@ -58,3 +58,12 @@ html {
     background:url(/award/banner-1-revised.webp)
 }
 
+.title{
+    @apply text-4xl font-bold text-center text-gray-800
+}
+.padding-x{
+    @apply px-10 
+}
+.padding-y{
+    @apply py-20
+}

@@ -30,13 +30,13 @@ const WhyChooseUs = () => {
     ];
 
     return (
-        <section className="bg-white">
-            <div className="container mx-auto px-6 py-12 text-center bg-white ">
-                <h2 className="text-lg md:text-3xl font-bold text-gray-800 mb-10">WHY CHOOSE US?</h2>
-                <div className=" grid grid-cols-3 md:grid-cols-6 gap-8 ">
+        <section className=" padding-x padding-y">
+            <div className="text-center">
+                <h2 className="title">WHY CHOOSE US?</h2>
+                <div className=" grid grid-cols-3 md:grid-cols-6 px-40 ">
                     {features.map((feature, index) => (
-                        <div key={index} className="flex flex-col items-center">
-                            <div className="w-20 md:w-24 h-20 md:h-24 bg-teal-400 flex items-center justify-center rounded-full shadow-md px-6">
+                        <div key={index} className="flex flex-col gap-3 items-center p-20">
+                            <div className="w-32 md:w-40 h-32 md:h-40 bg-teal-400 flex items-center justify-center rounded-full shadow-md px-6">
                                 {feature.icon}
                             </div>
                             <p className="mt-3 text-xs md:text-lg font-semibold text-gray-800">{feature.title}</p>
