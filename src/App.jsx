@@ -24,8 +24,6 @@ function App() {
 
   return (
     <>
-
-
       <DropDown />
       <Hero />
       <Content />
