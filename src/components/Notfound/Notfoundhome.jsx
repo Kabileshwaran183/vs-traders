@@ -5,7 +5,7 @@ import Notfound from './Notfound'
 const Notfoundhome = () => {
   return (
     <div>
-      <NotfoundDropDown/>
+      <NotfoundDropDown />
       <Notfound/>
     </div>
   )

@@ -8,7 +8,7 @@ import 'swiper/css/navigation';
 
 import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules';
 
-import { Data } from './data';
+
 import { Canimg } from './data';
 
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
