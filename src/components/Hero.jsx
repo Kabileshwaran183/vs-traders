@@ -12,7 +12,7 @@ export default function Hero() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <div className="h-[50vh] lg:h-screen bg-red-500 w-full overflow-hidden relative">
+    <div className="h-[50vh] lg:h-screen w-full overflow-hidden relative">
       {/* Main Swiper (Full-Screen Images) */}
         <Swiper
           loop={true}
@@ -44,7 +44,7 @@ export default function Hero() {
       <div className="absolute  right-10 md:right-28 top-[40%] md:top-[55%] transform -translate-y-1/2 gap-2 z-40 hidden  lg:block">
         <div className="flex flex-col gap-4 items-center max-sm:hidden">
           {/* Previous Button */}
-          <button className="prev-btn bg-teal-300 max-md:h-8 text-black opacity-30 p-2 max-md:text-base rounded-full">
+          <button className="prev-btn designColor max-md:h-8 text-white p-1 px-2 max-md:text-base rounded-full">
             ▲
           </button>
 
@@ -71,7 +71,7 @@ export default function Hero() {
           </Swiper>
 
           {/* Next Button */}
-          <button className="next-btn bg-teal-300 max-md:h-8 text-black p-2 opacity-30 max-md:text-base rounded-full md:mt-2">
+          <button className="next-btn designColor max-md:h-8 text-white p-1 px-2  max-md:text-base rounded-full md:mt-2">
             ▼
           </button>
         </div>

@@ -33,7 +33,7 @@ export const DropDown = () => {
 
   return (
     <nav className={`fixed w-full z-50 p-4 flex justify-between items-center transition-all duration-300 
-      ${isScrolled ? "bg-blue-950 shadow-lg" : "bg-transparent"} px-6 md:px-20`}
+      ${isScrolled ? "designColor shadow-lg" : "bg-transparent"} px-6 md:px-20`}
     >
       {/* Logo */}
       <Link to="/" className="text-white text-xl font-bold cursor-pointer">
