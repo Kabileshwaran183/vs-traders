@@ -13,6 +13,6 @@ import can05 from "/award/wooddoor1.jpg"
 
 
 
-export const Data = [img1, img2,img7];
 
-export const Canimg = [can05, can04, can03, can05, can04, can03, can05, can04, can03];
+
+export const Canimg = [can05, can04, can03, img1, img2, img3, img4, img5, img6];
