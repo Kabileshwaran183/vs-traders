@@ -68,5 +68,5 @@ html {
     @apply py-20
 }
 .para-text{
-    @apply text-left text-base md:text-2xl mb-4 px-8 text-gray-500 
+    @apply text-left text-base md:text-2xl text-gray-500 
 }

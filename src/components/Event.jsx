@@ -16,7 +16,7 @@ import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 function Events() {
 
     return (
-        <section className='padding-x padding-y '>
+        <section className='md:padding-x padding-y'>
             <h1 className='title'>Our Popular Products</h1>
             <div className="">
                 <Swiper

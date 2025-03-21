@@ -86,17 +86,17 @@ body {
 
 @media (max-width: 500px) {
     .swiper_container1 {
-        height: 47rem;
+        height: 36rem;
     }
 
     .swiperimg {
-        width: 28rem !important;
-        height: 36rem !important;
+        width: 20rem !important;
+        height: 28rem !important;
     }
 
     .swiperimg img {
-        width: 28rem !important;
-        height: 36rem !important;
+        width: 20rem !important;
+        height: 28rem !important;
     }
 }
 
@@ -124,7 +124,6 @@ body {
 @media (max-width: 450px) {
     .slider-controler {
         position: relative;
-        bottom: 10rem;
         display: flex;
         align-items: center;
         justify-content: center;

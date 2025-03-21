@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "swiper/css/effect-fade";
 import { FreeMode, Navigation, Thumbs, EffectFade, Autoplay } from "swiper/modules";
-import { Data } from "./data";
+import { HeroImg } from "./data";
 
 export default function Hero() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -29,7 +29,7 @@ export default function Hero() {
           modules={[FreeMode, Navigation, Thumbs, EffectFade, Autoplay]}
           style={{height:"100%"}}
         >
-          {Data.map((item, index) => (
+          {HeroImg.map((item, index) => (
             <SwiperSlide key={index} className="h-full w-full">
             <img
               src={item}
@@ -59,7 +59,7 @@ export default function Hero() {
             watchSlidesProgress={true}
             modules={[FreeMode, Navigation, Thumbs]}
           >
-            {Data.map((item, index) => (
+            {HeroImg.map((item, index) => (
               <SwiperSlide key={index} className="cursor-pointer">
                 <img
                   src={item}

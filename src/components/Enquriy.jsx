@@ -41,7 +41,7 @@ const HeroSection = () => {
         <section className=" ">
         <h1 className='title'>Send an Inquiry</h1>
         <div
-            className="relative flex flex-col md:flex-row items-center  justify-center bg-gray-100 p-4 md:p-6 lg:p-12"
+            className="relative flex flex-col md:flex-row items-center w-full justify-center bg-gray-100 p-4 md:p-6 lg:p-12"
             style={{
                 backgroundImage: "url('/award/hero/hero-2.jpg')",
                 backgroundSize: "cover",
@@ -50,18 +50,18 @@ const HeroSection = () => {
             }}
         >
            
-            <div className="w-full md:w-1/3 bg-white shadow-lg p-6 rounded-lg mt-6 md:mt-0">
-                <h2 className="text-lg md:text-xl font-semibold mb-4">
+            <div className="md:w-1/3 w-3/4 bg-white shadow-lg p-6 rounded-lg m-6 md:mt-0">
+                <h2 className="text-base md:text-xl font-semibold mb-4">
                     Get the right assistance for all your painting needs
                 </h2>
-                <form className="space-y-4" onSubmit={handleSubmit}>
+                <form className="space-y-4 max-md:text-base" onSubmit={handleSubmit}>
                     <input
                         type="text"
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
                         placeholder="Name*"
-                        className="w-full p-3 border rounded-lg"
+                        className="w-full p-3 border rounded-lg "
                         required
                     />
                     <input
