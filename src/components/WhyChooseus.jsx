@@ -33,13 +33,13 @@ const WhyChooseUs = () => {
         <section className=" padding-x padding-y">
             <div className="text-center">
                 <h2 className="title">WHY CHOOSE US?</h2>
-                <div className=" grid grid-cols-3 md:grid-cols-6 px-40 ">
+                <div className=" grid grid-cols-3 md:grid-cols-6 md:px-40 ">
                     {features.map((feature, index) => (
-                        <div key={index} className="flex flex-col gap-3 items-center p-20">
-                            <div className="w-32 md:w-40 h-32 md:h-40 bg-teal-400 flex items-center justify-center rounded-full shadow-md px-6">
+                        <div key={index} className="flex flex-col gap-3 items-center md:p-20 p-4">
+                            <div className="w-28 md:w-40 h-28 md:h-40 bg-teal-400 flex items-center justify-center rounded-full shadow-md px-6">
                                 {feature.icon}
                             </div>
-                            <p className="mt-3 text-xs md:text-lg font-semibold text-gray-800">{feature.title}</p>
+                            <p className="mt-3 text-base md:text-lg font-semibold text-gray-800">{feature.title}</p>
                         </div>
                     ))}
                 </div>
