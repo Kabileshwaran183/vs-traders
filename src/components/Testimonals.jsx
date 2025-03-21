@@ -34,7 +34,7 @@ const Testimonials = () => {
   };
 
   return (
-    <Parallax bgImage="/award/Nippon-Banner.jpg" strength={1000} className="py-10 ">
+    <Parallax bgImage="/award/hero/hero-2.jpg" strength={1000} className=" ">
       <div className="container mx-auto px-4">
       
         <h1 className="text-center text-4xl font-bold text-white mb-6">Testimonials</h1>
