@@ -16,10 +16,10 @@ import WhyChooseUs from "./components/WhyChooseus";
 function App() {
   return (
     <>
-      {/* Navbar */}
+      
       <DropDown />
 
-      {/* Page Content */}
+      
       <div className="">
         <Routes>
           <Route path="/" element={
@@ -43,7 +43,7 @@ function App() {
         </Routes>
       </div>
 
-      {/* Persistent Components */}
+      
       <WhatsAppButton />
       <ScrollToTop />
       <Footer1 />

@@ -16,9 +16,9 @@ import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 function Events() {
 
     return (
-        <section className='bg-white'>
+        <section >
             <h1>Our Popular Products</h1>
-            <div className="container bg-white ">
+            <div className="">
                 <Swiper
                     effect={'coverflow'}
                     grabCursor={true}
