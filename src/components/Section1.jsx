@@ -10,12 +10,12 @@ const interiors = [
 
 export const Section1 = () => {
     return (
-        <section id="explore" className="py-10 bg-gray-50">
-            <div className="text-center px-4">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-700 mb-4">
+        <section id="explore" className="md:padding-x padding-y ">
+            <div className="">
+                <h2 className="title">
                     Explore Our Room Makeover Services
                 </h2>
-                <p className="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto">
+                <p className="para-text text-center px-10">
                     Get hassle-free project management and execution when it comes to building your dream home with a tailor-made service.
                 </p>
             </div>
@@ -31,7 +31,7 @@ export const Section1 = () => {
                                 title={room.Name}
                                 className="w-full h-60 object-cover rounded-lg"
                             />
-                            <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white">
+                            <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex md:flex-col gap-2 justify-center items-center text-white">
                                 <p className="text-lg font-semibold">{room.Name}</p>
                                 <BsArrowRight className="text-2xl mt-2" />
                             </div>
