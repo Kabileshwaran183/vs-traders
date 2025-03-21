@@ -14,17 +14,11 @@ import { Canimg } from './data';
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 
 function Events() {
-    const [ph, setPh] = useState(true);
 
     return (
         <section className='bg-white'>
+            <h1>Our Popular Products</h1>
             <div className="container bg-white ">
-
-                <div className='flex gap-5 items-center justify-start px-8 py-16'>
-                    <button onClick={() => setPh(true)} className='bg-teal-500 p-3 rounded-lg text-white hover:scale-110 duration-300 delay-100  text-xl md:text-3xl '>Photography</button>
-                    <button onClick={() => setPh(false)} className='bg-teal-500 p-3 rounded-lg text-white hover:scale-110 duration-300 delay-100  text-xl md:text-3xl '>Wedding</button>
-                </div>
-
                 <Swiper
                     effect={'coverflow'}
                     grabCursor={true}
@@ -50,13 +44,7 @@ function Events() {
                     modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
                     className="swiper_container1"
                 >
-                    {ph ? Data.map((item, index) => (
-                        <SwiperSlide key={index} className='swiperimg'>
-                            <div className='swiperimg'>
-                                <img src={item} alt={`slide-${index}`} />
-                            </div>
-                        </SwiperSlide>
-                    )) :
+                    {
                         Canimg.map((item, index) => (
                             <SwiperSlide key={index} className='swiperimg'>
                                 <div className='swiperimg'>

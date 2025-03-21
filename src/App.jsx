@@ -32,7 +32,6 @@ function App() {
       <Events />
       <WhyChooseUs />
       <Section1 />
-    
       <About />
       <ContactForm />
       
