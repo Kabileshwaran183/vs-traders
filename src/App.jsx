@@ -28,12 +28,14 @@ function App() {
 
       <DropDown />
       <Hero />
+      
       <Content />
       <Events />
+      <ContactForm />
       <WhyChooseUs />
       <Section1 />
       <About />
-      <ContactForm />
+     
       
      
 
