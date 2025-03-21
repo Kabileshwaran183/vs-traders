@@ -39,7 +39,7 @@ const HeroSection = () => {
 
     return (
         <div
-            className="relative flex flex-col md:flex-row items-center md:items-end justify-center md:justify-end bg-gray-100 p-4 md:p-6 lg:p-12"
+            className="relative flex flex-col md:flex-row items-center  justify-center bg-gray-100 p-4 md:p-6 lg:p-12"
             style={{
                 backgroundImage: "url('/award/hero/hero-2.jpg')",
                 backgroundSize: "cover",
